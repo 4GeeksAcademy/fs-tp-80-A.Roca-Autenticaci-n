@@ -1,3 +1,121 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+/* Register.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #1e1e2f;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f7df1e;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #2a2a40;
+    color: #ffffff;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #888888;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7df1e;
+    color: #121212;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #d1c110;
+}
+
+.toggle-button {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    color: #f7df1e;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+    color: #ffffff;
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.toggle-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.register-active {
+    color: white;
+}
+
+.login-active {
+    color: white;
+}
+
+
+.private-view{
+    padding-top: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logout {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7df1e;
+    color: #121212;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

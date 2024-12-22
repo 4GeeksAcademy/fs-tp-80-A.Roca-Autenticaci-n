@@ -1,4 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
+1
 
 db = SQLAlchemy()
 
@@ -10,7 +11,7 @@ class User(db.Model):
 
     def __repr__(self):
         return f'<User {self.email}>'
-
+    
     def serialize(self):
         return {
             "id": self.id,
